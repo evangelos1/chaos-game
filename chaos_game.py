@@ -40,7 +40,7 @@ for i in np.arange(1, iterations):
         points[i, 0] = (p3[0] + points[i-1, 0]) / 2
         points[i, 1] = (p3[1] + points[i-1, 1]) / 2
 
-# Plot the result
+# Plot the results
 plt.figure(10)
 plt.clf()
 plt.plot(points[:, 0], points[:, 1], 'bv', ms=0.5)
