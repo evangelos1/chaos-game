@@ -6,7 +6,8 @@ Created on Wed May 29 16:34:01 2019
 @author: evangelos
 """
 
-# The chaos game. See wikipedia.org/wiki/Chaos_game for more information.
+# The chaos game: the Sierpinski triangle.
+# See wikipedia.org/wiki/Chaos_game for more information.
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -17,7 +18,7 @@ p2 = (10, 0)
 p3 = (5, np.sqrt(75))
 
 # Choose the number of iterations
-iterations = 100000
+iterations = 1000000
 
 # This array will be used to save the coordinates of the cursor after every iteration
 points = np.zeros((iterations, 2))
@@ -26,6 +27,7 @@ points = np.zeros((iterations, 2))
 points[0, :] = (np.random.randint(0, 10+1), np.random.randint(0, 10+1))
 #points[0, :] = (0, 0)
 #points[0, :] = (5, 2.5)
+print('Coordinates of starting point:', points[0, :])
 
 # Play!
 for i in np.arange(1, iterations):
